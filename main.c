@@ -53,5 +53,37 @@ int main()
 
     // FORMAT SPECIFIERS
 
+    // int age = 22;           // integers
+    // float price = 19.99;    // float
+    // double pi = 3.142;      // double
+    // char currency = '$';    // characters
+    // char name[] = "Daniel"; // array of characters -- string
+
+    // printf("%d", age);
+    // printf("%f\n", price);
+    // printf("%lf\n", pi);
+    // printf("%c\n", currency);
+    // printf("%s\n", name);
+
+    // width
+
+    // int num1 = 1;
+    // int num2 = 10;
+    // int num3 = 100;
+
+    // printf("%3d\n", num1);
+    // printf("%3d\n", num2);
+    // printf("%3d\n", num3);
+
+    // precision
+
+    // float price1 = 19.99;
+    // float price2 = 1.50;
+    // float price3 = -1.30;
+
+    // printf("%.1f\n", price1);
+    // printf("%.2f\n", price2);
+    // printf("%.2f\n", price3);
+
     return 0;
 }
