@@ -144,7 +144,7 @@ int main()
 
     total = price * quantity;
 
-    printf("\n You have bought %d %s\n", quantity, item);
+    printf("\nYou have bought %d %s\n", quantity, item);
     printf("%c%.2f\n", currency, total);
 
     return 0;
