@@ -1,1 +1,1 @@
-radius * radius * radius
+compounding_periods

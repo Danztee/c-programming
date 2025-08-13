@@ -201,42 +201,101 @@ int main()
 
     // printf("%d", x);
 
-    int radius = 0;
-    double pi = 3.14159265359;
+    // int radius = 0;
+    // double pi = 3.14159265359;
 
-    printf("Enter the radius: ");
-    scanf("%d", &radius);
+    // printf("Enter the radius: ");
+    // scanf("%d", &radius);
 
-    printf("You typed %d\n", radius);
+    // printf("You typed %d\n", radius);
 
-    int squared_int = radius * radius;
+    // int squared_int = radius * radius;
 
-    // Circle’s area is πr2 which is 3.14159265359 x (radius)2
-    // area = 3.14159265359 x (radius)2
+    // // Circle’s area is πr2 which is 3.14159265359 x (radius)2
+    // // area = 3.14159265359 x (radius)2
 
-    float area = 0.0;
-    area = pi * squared_int;
+    // float area = 0.0;
+    // area = pi * squared_int;
 
-    printf("The circle area is: %.2f\n", area);
+    // printf("The circle area is: %.2f\n", area);
 
-    // Sphere’s surface area is 4πr2
-    // so it will be 4 X 3.14159265359 X (radius)2
+    // // Sphere’s surface area is 4πr2
+    // // so it will be 4 X 3.14159265359 X (radius)2
 
-    float surface_area = 0.0;
-    surface_area = 4.0 * pi * squared_int;
+    // float surface_area = 0.0;
+    // surface_area = 4.0 * pi * squared_int;
 
-    printf("The Sphere’s surface area: %.2f\n", surface_area);
+    // printf("The Sphere’s surface area: %.2f\n", surface_area);
 
-    // Sphere’s volume is 4/3 πr3
-    // so it'll be 4 / 3 X 3.14159265359 X (radius)3
+    // // Sphere’s volume is 4/3 πr3
+    // // so it'll be 4 / 3 X 3.14159265359 X (radius)3
 
-    float sphere_volume = 0.0;
-    sphere_volume = 4.0 / 3.0 * pi * (radius * radius * radius);
+    // float sphere_volume = 0.0;
+    // sphere_volume = 4.0 / 3.0 * pi * (radius * radius * radius);
 
-    printf("The Sphere’s volume is: %.2f\n", sphere_volume);
+    // printf("The Sphere’s volume is: %.2f\n", sphere_volume);
 
-    // float t = 4 / 3;
-    // printf("%f", t);
+    // // float t = 4 / 3;
+    // // printf("%f", t);
+
+    // COMPOUND INTEREST CALCULATOR
+
+    // PRINCIPAL, RATE, TIME COMPOUND PER YEAR, NO. OF YEARS
+
+    // int principal = 0;
+    // double annual_interest_rate = 0.0;
+    // int years = 0;
+    // int compounding_frequency = 0;
+
+    // printf("Enter your principal (P): ");
+    // scanf("%d", &principal);
+
+    // printf("Enter the annual interest rate in percent (r): ");
+    // scanf("%lf", &annual_interest_rate);
+
+    // printf("Enter the number of year(s) (t): ");
+    // scanf("%d", &years);
+
+    // printf("Enter the compounding frequency per year (n):  ");
+    // scanf("%d", &compounding_frequency);
+
+    // float compound_interest = 0;
+    // float interest_rate_in_percent = annual_interest_rate / 100;
+    // int compounding_periods = compounding_frequency * years;
+
+    // printf("compounding_periods: %d\n", compounding_periods);
+
+    // // printf("here %f\n", 1 + (interest_rate_rounded_to_nearest / compounding_frequency));
+
+    // compound_interest = principal * pow(1 + (interest_rate_in_percent / compounding_frequency), compounding_periods);
+
+    // printf("The compound_interest %.2f\n", compound_interest);
+    // printf("After %d years, the total will be $%.2f\n", years, compound_interest);
+
+    double principal = 0.0;
+    double rate = 0.0;
+    int years = 0;
+    int timesCompounded = 0;
+    double total = 0.0;
+
+    printf("Compound interest calculator\n");
+
+    printf("Enter the principal (P): ");
+    scanf("%lf", &principal);
+
+    printf("Enter the interest rate % (r): ");
+    scanf("%lf", &rate);
+    rate = rate / 100;
+
+    printf("Enter the number of years rate (t): ");
+    scanf("%d", &years);
+
+    printf("Enter # of times compounded per year (n): ");
+    scanf("%d", &timesCompounded);
+
+    total = principal * pow(1 + rate / timesCompounded, timesCompounded * years);
+
+    printf("After %d years, total will be $ %.2lf\n", years, total);
 
     return 0;
 }
